@@ -3,9 +3,9 @@ import { View, Text, StyleSheet } from 'react-native';
 
 const SigninScreen = () => {
     return (
-        <View>
+        <>
             <Text>Sign In Screen</Text>
-        </View>
+        </>
     );
 };
 

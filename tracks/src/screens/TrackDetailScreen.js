@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const TrackDetailScreen = () => {
+const TrackDetailScreen = ({ navigation }) => {
     return (
-        <View>
+        <>
             <Text>Track Detail Screen</Text>
-        </View>
+        </>
     );
 };
 
