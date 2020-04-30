@@ -8,10 +8,12 @@ import AccountScreen from './src/screens/AccountScreen';
 import TrackCreateScreen from './src/screens/TrackCreateScreen';
 import TrackDetailScreen from './src/screens/TrackDetailScreen';
 import TrackListScreen from './src/screens/TrackListScreen';
+import LoadingScreen from './src/screens/LoadingScreen';
 import { setNavigator } from './src/navigationRef';
 import { Provider as AuthProvider } from './src/context/AuthContext';
 
 const switchNavigator = createSwitchNavigator({
+  loading: LoadingScreen,
   loginFlow: createStackNavigator({
     Signup: SignupScreen,
     Signin: SigninScreen
@@ -21,8 +23,8 @@ const switchNavigator = createSwitchNavigator({
       TrackList: TrackListScreen, 
       TrackDetail: TrackDetailScreen
     }),
-    Account: AccountScreen,
-    TrackCreate: TrackCreateScreen
+    TrackCreate: TrackCreateScreen,
+    Account: AccountScreen
   })
 });
 
