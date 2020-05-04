@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from 'react';
 import { Context as AuthContext } from '../context/AuthContext';
 
-const ResolveAuthScreen = () => {
+const LoadingScreen = () => {
     const { tryLocalSignin } = useContext(AuthContext);
 
     useEffect(() => {
@@ -11,4 +11,4 @@ const ResolveAuthScreen = () => {
     return null;
 };
 
-export default ResolveAuthScreen;
+export default LoadingScreen;
